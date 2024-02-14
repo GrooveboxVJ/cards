@@ -12,6 +12,8 @@ let recto = document.querySelector(".env-container");
 let sss = document.querySelectorAll(".sss");
 let bool = false;
 let mute = document.querySelector('.stopbutton');
+let allergene = document.querySelector('.allergene');
+
 
 s2.addEventListener("click", (e) => {
   card.classList.toggle("is-flipped");
@@ -75,7 +77,8 @@ function open_env() {
   }, 4300);
   setTimeout((e)=>{
     card.classList.remove('anime-letter');
-  },7000);
+    allergene.style.display="block"
+  },7500);
   toclick.forEach((e) => {
     e.classList.toggle("zero");
   });
