@@ -662,7 +662,8 @@ body{
   font-size: 14px;
   text-align: center;
   position: fixed; 
-  bottom:9em;
+  bottom:8em;
+  left:8em;
   z-index: 21;
   
 }
