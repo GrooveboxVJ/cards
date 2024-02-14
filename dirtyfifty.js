@@ -27,7 +27,7 @@ body.addEventListener("click", () => {
 
 var audio = new Audio('./assets/Ed Sheeran - Shape of You (Official Music Video).mp3');
 function play_music(){
-    audio.volume=0.3;
+    audio.volume=0.2;
     audio.play();
 }
 
@@ -36,7 +36,7 @@ const mutesound = ()=>{
     audio.volume=0
     mute.style.backgroundImage="url('./assets/noaudio.png')"
   } else {
-    audio.volume=0.3
+    audio.volume=0.2
     mute.style.backgroundImage="url('./assets/laudio.png')"
   }
 }
