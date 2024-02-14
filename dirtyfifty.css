@@ -30,7 +30,7 @@
 .anime-enveloppe{
   transition: 1300ms;
   rotate: 45deg;
-  transform: scale(0.7);
+  transform: scale(0.65);
 }
 .scalebig{
   transition: transform 2s;
