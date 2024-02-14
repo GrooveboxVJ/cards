@@ -11,7 +11,7 @@ let enveloppes = document.querySelectorAll(".enveloppe");
 let recto = document.querySelector(".env-container");
 let sss = document.querySelectorAll(".sss");
 let bool = false;
-
+let mute = document.querySelector('.stopbutton');
 
 s2.addEventListener("click", (e) => {
   card.classList.toggle("is-flipped");
@@ -27,9 +27,23 @@ body.addEventListener("click", () => {
 
 var audio = new Audio('./assets/Ed Sheeran - Shape of You (Official Music Video).mp3');
 function play_music(){
- 
+    audio.volume=0.3;
     audio.play();
 }
+
+const mutesound = ()=>{
+  if (audio.volume!==0) {
+    audio.volume=0
+    mute.style.backgroundImage="url('./assets/noaudio.png')"
+  } else {
+    audio.volume=0.3
+    mute.style.backgroundImage="url('./assets/laudio.png')"
+  }
+}
+
+mute.addEventListener('click',()=>{
+  mutesound()
+})
 
 function open_env() {
   let env1 = document.querySelector("#env1");
@@ -59,7 +73,9 @@ function open_env() {
     env2.classList.add("anime-enveloppe");
     s2.classList.add("scalebig");
   }, 4300);
-
+  setTimeout((e)=>{
+    card.classList.remove('anime-letter');
+  },7000);
   toclick.forEach((e) => {
     e.classList.toggle("zero");
   });
