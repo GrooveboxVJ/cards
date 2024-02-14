@@ -80,3 +80,4 @@ function open_env() {
     e.classList.toggle("zero");
   });
 }
+document.documentElement.scrollTop = 0;
