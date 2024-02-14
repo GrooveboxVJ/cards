@@ -1,0 +1,244 @@
+@keyframes lettersout{
+  0%,
+  20%,
+  40%{
+    rotate: -90deg;
+  }
+  50%{
+    rotate: 0deg;
+    translate: 0 -100%;
+  }
+  100%{
+    rotate: 0%;
+  } 
+}
+.anime-letter{
+  animation: 3.5s lettersout forwards;
+}
+
+@keyframes envout{
+  0%{
+
+  }
+ 
+  100%{
+    rotate: 45deg;
+  } 
+}
+.anime-enveloppe{
+  transition: 1300ms;
+  rotate: 45deg;
+  transform: scale(0.7);
+}
+.scalebig{
+  transition: transform 2s;
+  transform: scale(2);
+}
+
+@keyframes openenv{
+  0%{
+    transform: rotateX(180deg);
+  }
+  100%{
+    
+  }
+}
+
+.sss{
+
+}
+
+.hide{
+  display: none;
+}
+.zero{
+  z-index: 0;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.env-container{
+  width: 100%;
+  height: 102%;
+  transition: all 2s;
+  transform-style: preserve-3d;
+}
+#env1{
+  transition: all 0.3s;
+  display: none;
+  z-index: 4;
+}
+#env2{
+  display: none;
+}
+.opac0{
+  transition: all 2s;
+  opacity: 0;
+  pointer-events: none;
+}
+.opac1{
+  transition: all 2s;
+  opacity: 1;
+}
+.recto{
+  width: 100%;
+  height: 100%;
+  background: url('./assets/enveloppe-avant-ferme.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; 
+  transition: 1000ms;
+  backface-visibility: hidden;
+}
+.verso{
+  width: 100%;
+  height: 100%;
+  background: red;
+  background: url('./assets/enveloppe-ferme.png');
+  background-size: cover;
+  background-repeat: no-repeat; 
+  transition: 1000ms;
+  transform: rotateY( 180deg );
+  backface-visibility: hidden;
+}
+.scene1 {
+  position: absolute;
+  translate: 0px 0px;
+  width: 670px;
+  height: 490px;
+  perspective: 1600px;
+  z-index: 10;
+  opacity: 1;
+  transform: scale(0.6);
+}
+.scene {
+  position: absolute;
+  width: 800px;
+  height: 1135px;
+  perspective: 1600px;
+  /*
+  animation: 4s lettersout;
+  */
+  transform: scale(0.35);
+}
+.z3{
+  z-index: 3;
+  background-color: blue;
+}
+.z2{
+  z-index: 2;
+}
+.z1{
+  z-index: 1;
+}
+.letter2{
+  position: absolute;
+  width: 800px;
+  height: 1135px;
+  perspective: 1600px;
+  background: url('./assets/invite_louis-raes\ \(1\).jpg');
+  background-size: contain;
+  transform: scale(0.3);
+  rotate: -90deg;
+  z-index: 1;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: all 2s;
+  transform-style: preserve-3d;
+  
+}
+.card__face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+.card__face--front {
+  background: url('./assets/invite_louis-raes\ \(1\).jpg');
+  background-size: cover;
+}
+
+.card__face--back {
+  background: url('./assets/invite_louis-raes\ \(1\)2.jpg');
+  background-size: cover;
+  transform: rotateY( 180deg );
+}
+.is-flipped {
+  transform: rotateY(180deg);
+}
+.flipped{
+  transition: 4000ms;
+  transform: rotateX(180deg);
+}
+.in{
+  translate: 0% 100%;
+}
+.couche{
+ /* rotate: -90deg;*/
+}
+
+.enveloppe{
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 300px;
+}
+.chapeau{
+  position: absolute;
+  left: 0%;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  transform-origin: bottom;
+  background: url('./assets/chapeau.png');
+  background-size: 400px 212px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  transition: all 2000ms;
+  z-index: 2;
+  animation: 2s openenv;
+}
+
+
+.eo-chapeau{ 
+  background-color: blue;
+  height: 44%;
+  opacity: 0.5;
+}
+
+.eo-avant{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  background: url('./assets/ouverture.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+.eo-arriere{
+  position: absolute;
+  background-color: blue;
+  background: url('./assets/fond.png');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
