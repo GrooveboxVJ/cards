@@ -638,7 +638,7 @@ body{
     -webkit-transform-origin: 50% 1000px;
             transform-origin: 50% 1000px;
     opacity: 1;
-    rotate: -5deg;
+    rotate: -6deg;
   }
 }
 .playfair{
@@ -663,7 +663,7 @@ body{
   text-align: center;
   position: fixed; 
   bottom:8em;
-  translate: 20% -150px;
+  translate: 20% -155px;
   z-index: 21;
   
 }
