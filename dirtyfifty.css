@@ -638,7 +638,7 @@ body{
     -webkit-transform-origin: 50% 1000px;
             transform-origin: 50% 1000px;
     opacity: 1;
-    rotate: 5deg;
+    rotate: -5deg;
   }
 }
 .playfair{
