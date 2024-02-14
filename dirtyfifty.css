@@ -676,12 +676,14 @@ body{
   padding: 1em;
   background-color: #df6556;
   text-shadow: 2px 2px rgba(0,0,0,0.6);
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
   position: fixed; 
-  top: 8em;
+  rotate: 2deg;
+  top: 45%;
+  right: 4em;
   z-index: 21;
-  
+  transition: all 800ms;
 }
 
 a{
@@ -689,7 +691,7 @@ a{
   text-decoration: none;
 }
 a:hover{
-  font-size: 16px;
+  font-size: 20px;
   transform: scale(1.03);
 }
 a:active{
