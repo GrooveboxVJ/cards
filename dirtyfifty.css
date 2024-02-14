@@ -663,7 +663,7 @@ body{
   text-align: center;
   position: fixed; 
   bottom:8em;
-  translate: 100% -80px;
+  translate: 100% 100%;
   z-index: 21;
   
 }
