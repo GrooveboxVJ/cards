@@ -474,7 +474,7 @@ body{
   perspective: 1600px;
   z-index: 10;
   opacity: 1;
-  transform: scale(0.55);
+  transform: scale(0.6);
 }
 .scene {
   position: absolute;
@@ -484,7 +484,7 @@ body{
   /*
   animation: 4s lettersout;
   */
-  transform: scale(0.60);
+  transform: scale(0.6);
 }
 .z3{
   z-index: 3;
@@ -680,7 +680,6 @@ body{
   text-align: center;
   position: fixed; 
   top: 8em;
-  translate: 18% -60px;
   z-index: 21;
   
 }
@@ -690,7 +689,7 @@ a{
   text-decoration: none;
 }
 a:hover{
-  font-size: 26px;
+  font-size: 16px;
   transform: scale(1.03);
 }
 a:active{
